@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  background: url("/images/desktop/image-hero.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 50vh;
+}
+
+.header__title {
+  text-transform: uppercase;
+  margin: 1rem;
+  border: 1px solid #fff;
+  color: #fff;
+  padding: 1rem;
+  font-family: "Josefins", sans-serif;
+  font-weight: 300;
+  margin-top: 5rem;
+}
+
+.header .links {
+  display: none;
+}
+
+.header .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.header .hamburger {
+  cursor: pointer;
+}
+
+.header .hamburger span {
+  display: block;
+  height: 2px;
+  width: 20px;
+  margin: 5px 0rem;
+  background-color: #fff;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+}
+
+.section img {
+  width: 100%;
+  margin: 2rem;
+}
+
+.section__title {
+  font-family: "Josefins", sans-serif;
+  font-weight: 300;
+  font-size: 2rem;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.section__p {
+  text-align: center;
+  line-height: 2rem;
+}
+
+.images {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+}
+
+.images__header__title {
+  font-family: "Josefins", sans-serif;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 24px;
+  text-align: center;
+}
+
+.images__header__btn {
+  display: none;
+}
+
+.images .image {
+  position: relative;
+  margin: 0.5rem 0rem;
+}
+
+.images .image img {
+  width: 100%;
+  height: 100%;
+}
+
+.images .image__title {
+  position: absolute;
+  bottom: 0;
+  color: #fff;
+  font-family: "Josefins", sans-serif;
+  font-weight: 100;
+  font-size: 1.2rem;
+  margin-right: 13rem;
+  padding: 1rem;
+  text-transform: uppercase;
+}
+
+.footer {
+  background: #000;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Alata", sans-serif;
+}
+
+.footer li {
+  list-style: none;
+  margin: 1rem;
+}
+
+.footer li a {
+  text-decoration: none;
+  color: #fff;
+  text-align: center;
+}
+
+.footer img {
+  width: 40%;
+  margin: 1rem 0rem;
+}
+
+.footer__links {
+  margin-top: 2rem;
+}
+
+.footer__links img {
+  width: 20px;
+  margin: 0rem 0.5rem;
+}
+
+.footer .trademark {
+  color: #747474;
+  margin: 2rem 0rem;
+  font-size: 14px;
+}
+/*# sourceMappingURL=style.css.map */

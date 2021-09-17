@@ -1,0 +1,40 @@
+.footer {
+  background: #000;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Alata", sans-serif;
+
+  li {
+    list-style: none;
+    margin: 1rem;
+  }
+
+  li a {
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+  }
+
+  img {
+    width: 40%;
+    margin: 1rem 0rem;
+  }
+
+  &__links {
+    margin-top: 2rem;
+
+    img {
+      width: 20px;
+      margin: 0rem 0.5rem;
+    }
+  }
+
+  .trademark {
+    color: #747474;
+    margin: 2rem 0rem;
+    font-size: 14px;
+  }
+}

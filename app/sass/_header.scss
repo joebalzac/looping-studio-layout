@@ -1,0 +1,41 @@
+.header {
+  background: url("/images/desktop/image-hero.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 50vh;
+
+  &__title {
+    text-transform: uppercase;
+    margin: 1rem;
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 1rem;
+    font-family: "Josefins", sans-serif;
+    font-weight: 300;
+    margin-top: 5rem;
+  }
+
+  .links {
+    display: none;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  .hamburger {
+    cursor: pointer;
+    span {
+      display: block;
+      height: 2px;
+      width: 20px;
+      margin: 5px 0rem;
+      background-color: #fff;
+    }
+  }
+}

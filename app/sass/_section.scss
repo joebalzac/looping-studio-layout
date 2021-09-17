@@ -1,0 +1,26 @@
+.section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+
+  img {
+    width: 100%;
+    margin: 2rem;
+  }
+
+  &__title {
+    font-family: "Josefins", sans-serif;
+    font-weight: 300;
+    font-size: 2rem;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+
+  &__p {
+    text-align: center;
+    line-height: 2rem;
+  }
+}
