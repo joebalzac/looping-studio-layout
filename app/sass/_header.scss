@@ -4,7 +4,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  height: 50vh;
+  height: 28rem;
 
   &__title {
     text-transform: uppercase;
@@ -15,10 +15,36 @@
     font-family: "Josefins", sans-serif;
     font-weight: 300;
     margin-top: 5rem;
+
+    @include breakpoint-up(medium) {
+      width: 40%;
+      margin: 3rem;
+      margin-top: 7rem;
+    }
   }
 
   .links {
     display: none;
+    @include breakpoint-up(medium) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      li {
+        list-style: none;
+        margin: 0.5rem;
+
+        a {
+          color: #fff;
+          text-decoration: none;
+          font-family: "Alata", "sans-serif";
+
+          &:hover {
+            color: aquamarine;
+          }
+        }
+      }
+    }
   }
 
   .navbar {
@@ -26,6 +52,13 @@
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
+
+    .logo {
+      @include breakpoint-up(medium) {
+        width: 150px;
+        margin-left: 2rem;
+      }
+    }
   }
 
   .hamburger {
@@ -36,6 +69,10 @@
       width: 20px;
       margin: 5px 0rem;
       background-color: #fff;
+
+      @include breakpoint-up(medium) {
+        display: none;
+      }
     }
   }
 }

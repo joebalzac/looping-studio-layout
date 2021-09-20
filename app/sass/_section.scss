@@ -4,10 +4,41 @@
   justify-content: center;
   align-items: center;
   margin: 1rem;
+  position: relative;
+
+  @include breakpoint-up(large) {
+    flex-direction: row;
+  }
+
+  @include breakpoint-up(medium) {
+    margin: 2rem;
+  }
 
   img {
     width: 100%;
     margin: 2rem;
+
+    @include breakpoint-up(medium) {
+      width: 60%;
+    }
+
+    @include breakpoint-up(large) {
+      margin-left: -15rem;
+    }
+  }
+
+  &__copy {
+    background: #fff;
+    padding: 2rem;
+
+    @include breakpoint-up(large) {
+      position: absolute;
+      padding: 1rem;
+      right: 0;
+      bottom: 30px;
+      width: 35rem;
+      height: 20rem;
+    }
   }
 
   &__title {
@@ -17,10 +48,29 @@
     text-transform: uppercase;
     text-align: center;
     margin-bottom: 1.5rem;
+
+    @include breakpoint-up(medium) {
+      font-size: 2rem;
+    }
+
+    @include breakpoint-up(large) {
+      text-align: start;
+      margin: 1rem 3rem;
+    }
   }
 
   &__p {
     text-align: center;
     line-height: 2rem;
+
+    @include breakpoint-up(medium) {
+      font-size: 14px;
+      margin: 0rem 6rem;
+    }
+
+    @include breakpoint-up(large) {
+      text-align: start;
+      margin: 0rem 3rem;
+    }
   }
 }
