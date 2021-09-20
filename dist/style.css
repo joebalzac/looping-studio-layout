@@ -16,13 +16,13 @@
 
 .header__title {
   text-transform: uppercase;
-  margin: 1rem;
+  margin: 2rem;
   border: 1px solid #fff;
   color: #fff;
   padding: 1rem;
   font-family: "Josefins", sans-serif;
   font-weight: 300;
-  margin-top: 5rem;
+  margin-top: 6rem;
 }
 
 @media (min-width: 40em) {
@@ -30,6 +30,16 @@
     width: 40%;
     margin: 3rem;
     margin-top: 7rem;
+  }
+}
+
+@media (min-width: 64em) {
+  .header__title {
+    margin-left: 6.5rem;
+    width: 40%;
+    padding: 3rem;
+    font-size: 3rem;
+    margin-top: 2rem;
   }
 }
 
@@ -123,7 +133,7 @@
 
 @media (min-width: 64em) {
   .section img {
-    margin-left: -15rem;
+    margin-left: -20rem;
   }
 }
 

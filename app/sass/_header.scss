@@ -8,18 +8,26 @@
 
   &__title {
     text-transform: uppercase;
-    margin: 1rem;
+    margin: 2rem;
     border: 1px solid #fff;
     color: #fff;
     padding: 1rem;
     font-family: "Josefins", sans-serif;
     font-weight: 300;
-    margin-top: 5rem;
+    margin-top: 6rem;
 
     @include breakpoint-up(medium) {
       width: 40%;
       margin: 3rem;
       margin-top: 7rem;
+    }
+
+    @include breakpoint-up(large) {
+      margin-left: 6.5rem;
+      width: 40%;
+      padding: 3rem;
+      font-size: 3rem;
+      margin-top: 2rem;
     }
   }
 
