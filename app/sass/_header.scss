@@ -32,7 +32,44 @@
   }
 
   .links {
-    display: none;
+    @include breakpoint-down(medium) {
+      display: none;
+    }
+
+    &.elem-hide {
+      display: flex;
+      position: absolute;
+      flex-direction: column;
+      justify-content: center;
+      background: #000;
+      list-style: none;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      transition: 500ms ease-in-out;
+      transform-origin: right;
+      animation: fromLeft 0.3s ease-in;
+
+      @include breakpoint-up(medium) {
+        display: none;
+      }
+
+      li {
+        margin: 0.5rem 1rem;
+        a {
+          text-decoration: none;
+          color: #fff;
+          font-size: 24px;
+          font-family: "Josefin Sans", sans-serif;
+          font-weight: 300;
+        }
+        @include breakpoint-up(medium) {
+          display: none;
+        }
+      }
+    }
+
     @include breakpoint-up(medium) {
       display: flex;
       justify-content: center;
@@ -62,6 +99,9 @@
     padding: 1rem;
 
     .logo {
+      position: relative;
+      z-index: 15;
+
       @include breakpoint-up(medium) {
         width: 150px;
         margin-left: 2rem;
@@ -70,6 +110,8 @@
   }
 
   .hamburger {
+    position: relative;
+    z-index: 15;
     cursor: pointer;
     span {
       display: block;
@@ -77,9 +119,26 @@
       width: 20px;
       margin: 5px 0rem;
       background-color: #fff;
+      transform-origin: center left;
 
       @include breakpoint-up(medium) {
         display: none;
+      }
+    }
+
+    &.active {
+      animation: spinAround 0.3s ease-in-out;
+
+      span:nth-child(1) {
+        transform: rotate(45deg);
+      }
+
+      span:nth-child(2) {
+        opacity: 0;
+      }
+
+      span:nth-child(3) {
+        transform: rotate(-45deg);
       }
     }
   }
