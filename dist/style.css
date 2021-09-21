@@ -411,7 +411,7 @@
 
 .footer__social .icons {
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: -1rem;
 }
 
 .footer__social img {
