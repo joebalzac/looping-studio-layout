@@ -61,6 +61,10 @@
   }
 }
 
+.header .links {
+  display: flex;
+}
+
 @media (max-width: 63.9375em) {
   .header .links {
     display: none;
@@ -83,12 +87,6 @@
   animation: fromLeft 0.3s ease-in;
 }
 
-@media (min-width: 40em) {
-  .header .links.elem-hide {
-    display: none;
-  }
-}
-
 .header .links.elem-hide li {
   margin: 0.5rem 1rem;
 }
@@ -102,7 +100,7 @@
 }
 
 @media (min-width: 40em) {
-  .header .links.elem-hide li {
+  .header .links.elem-hide {
     display: none;
   }
 }
@@ -181,6 +179,12 @@
 
 .header .hamburger.active span:nth-child(3) {
   transform: rotate(-45deg);
+}
+
+@media (min-width: 40em) {
+  .header .hamburger.active {
+    display: none;
+  }
 }
 
 .section {
@@ -411,7 +415,7 @@
 
 .footer__social .icons {
   text-align: center;
-  margin-bottom: -1rem;
+  margin-bottom: 2rem;
 }
 
 .footer__social img {

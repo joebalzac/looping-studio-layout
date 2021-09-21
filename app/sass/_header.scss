@@ -32,6 +32,8 @@
   }
 
   .links {
+    display: flex;
+
     @include breakpoint-down(medium) {
       display: none;
     }
@@ -51,10 +53,6 @@
       transform-origin: right;
       animation: fromLeft 0.3s ease-in;
 
-      @include breakpoint-up(medium) {
-        display: none;
-      }
-
       li {
         margin: 0.5rem 1rem;
         a {
@@ -64,9 +62,10 @@
           font-family: "Josefin Sans", sans-serif;
           font-weight: 300;
         }
-        @include breakpoint-up(medium) {
-          display: none;
-        }
+      }
+
+      @include breakpoint-up(medium) {
+        display: none;
       }
     }
 
@@ -139,6 +138,10 @@
 
       span:nth-child(3) {
         transform: rotate(-45deg);
+      }
+
+      @include breakpoint-up(medium) {
+        display: none;
       }
     }
   }
